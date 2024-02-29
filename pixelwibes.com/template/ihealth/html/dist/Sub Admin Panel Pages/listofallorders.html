@@ -1,0 +1,263 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 12:12:30 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sub Admin Panel</title>
+    <link rel="icon" href="../assets/images/medical.png" type="png"> <!-- Favicon-->
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../assets/css/ihealth.style.min.css">
+    <!-- Google Code  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-264428387-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-264428387-1');
+    </script>
+</head>
+<body>
+
+<div id="ihealth-layout" class="theme-tradewind">
+    
+    <!-- sidebar -->
+    <div class="sidebar px-4 py-4 py-md-5 me-0">
+        <div class="d-flex flex-column h-100">
+            <a href="allproductslist.html" class="mb-0 brand-icon">
+                <span class="logo-icon">
+                    <i class="icofont-medical-sign-alt fs-2"></i>
+                </span>
+                <span class="logo-text">OMO</span>
+            </a>
+            <!-- Menu: main ul -->
+            <ul class="menu-list flex-grow-1 mt-3">
+                <li class="collapsed">
+                <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#dashboard" href="#">
+                <i class="icofont-listine-dots"></i> <span>Categories</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                <!-- Menu: Sub menu ul -->
+                    <ul class="sub-menu collapse show" id="dashboard">
+                        <li><a class="ms-link active" href="maincategory.html">Main Category</a></li>
+                        <li><a class="ms-link" href="subcategory.html"> Sub Category</a></li>
+                    </ul>
+                </li>
+                <li><a class="m-link" href="allproductslist.html"><i class="icofont-pills"></i> <span>Products</span></a></li>
+                <li class="collapsed">
+                    <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="index.html">
+                    <i class="icofont-fast-delivery"></i> <span>Order Management</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                    <!-- Menu: Sub menu ul -->
+                    <ul class="sub-menu collapse show" id="menu-Patient">
+                        <!-- <li><a class="ms-link active" href="patient-list.html">Add New Order</a></li> -->
+                        <li><a class="ms-link" href="listofallorders.html">List Of Order</a></li>
+                        <!-- <li><a class="ms-link " href="#">List Filtered By Order Status</a></li>
+                        <li><a class="ms-link" href="#">View Order Details</a></li> -->
+                    </ul>
+                </li>
+                <li class="collapsed">
+                    <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Componentsone" href="#"><i
+                            class="icofont-clip-board"></i> <span>Inventory Management</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                    <!-- Menu: Sub menu ul -->
+                    <ul class="sub-menu collapse" id="menu-Componentsone">
+                        <!-- <li><a class="ms-link" href="invoices.html"><span>Add New Stock</span> </a></li> -->
+                        <li><a class="ms-link" href="listofallstock.html"><span>List Of All Stock</span> </a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Menu: menu collepce btn -->
+            <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+            </button>
+        </div>
+    </div>
+    <!-- main body area -->
+    <div class="main px-lg-4 px-md-4">
+
+        <!-- Body: Header -->
+        <div class="header">
+            <nav class="navbar py-4">
+                <div class="container-xxl">
+
+                  
+                    <!-- header rightbar icon -->
+                    <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+            
+                        <div class="dropdown notifications zindex-popover">
+                            <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="icofont-alarm fs-4"></i>
+                            </a>
+                            <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-sm-end p-0 m-0">
+                                <div class="card border-0 w380">
+                                    <div class="card-header border-0 p-3">
+                                        <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                            <span>Notifications</span>
+                                        </h5>
+                                    </div>
+                                    <a class="card-footer text-center border-top-0" href="#"> View all notifications</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------------------- Login ------------------------------------------------>
+
+                       <a href="#"><button type="button" class="btn btn-outline-primary">Login</button></a>
+                        <!------------------------------------------ settings---------------------------------------->
+                        <div class="setting ms-2">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-4"></i></a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                        <span class="fa fa-bars"></span>
+                    </button>
+    
+                    <!-------------------------------------- main menu Search---------------------------------------->
+                    <div class="order-0 col-lg-8 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 d-flex justify-content-end ">
+                        <div class="input-group flex-nowrap input-group-lg ">
+                            <input type="search" class="form-control " placeholder="Search..." aria-label="search" aria-describedby="addon-wrapping">
+                            <button type="button" class="input-group-text" id="addon-wrapping"><i class="icofont-search-2"></i></button>
+                        </div>
+
+                    </div>
+                    <!-------------------------------- cart -------------------------------------->
+                    <div class="col d-flex justify-content-end ms-auto">
+                        <div class="icon-holder">
+                            <div class="icon fs-3"> 
+                                <a href=""><i class="icofont-cart" style="size: 50%;"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+        
+                </div>
+                    
+            </nav>
+        </div> 
+        <!-- Body: Body -->
+        <div class="body d-flex py-3">
+            <div class="container-xxl">
+                
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                <h6 class="mb-0 fw-bold ">List of all Orders</h6>
+                                <div class="row g-3 align-items-center">
+                                <a href="addneworder.html"><button class="btn btn-primary icofont-ui-add" style="margin-left: 10%;" type="button"> Add New Order</button></a>
+                            </div>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Order Id</th>
+                                            <th scope="col">Order date</th>
+                                            <th scope="col">Customer Id</th>
+                                            <th scope="col">Order Status</th>
+                                            <th scope="col">Total Amount</th>
+                                            <th scope="col">Payment Status</th>
+                                            <th scope="col">Payment Mode</th>
+                                            <th scope="col">Shipping Address</th>
+                                            <th scope="col">Action</th>                  
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>29/09/2022</td>
+                                            <td>101</td>
+                                            <td>Delivered</td>
+                                            <td>104.99</td>
+                                            <td>Paid</td>
+                                             <td>Cheque</td>
+                                            <td>Ameerpet</td>
+                                            <td>
+                                                <button class="btn btn-primary icofont-ui-edit" type="submit"> Edit</button>
+                                                <button class="btn btn-danger icofont-ui-delete" type="submit"> Delete</button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>25/09/2023</td>
+                                            <td>102</td>
+                                            <td>Processing</td>
+                                            <td>199.99</td>
+                                            <td>Pending</td>
+                                             <td>Cash</td>
+                                            <td>Yusafguda</td>
+                                            <td>
+                                                <button class="btn btn-primary icofont-ui-edit" type="submit"> Edit</button>
+                                                <button class="btn btn-danger icofont-ui-delete" type="submit"> Delete</button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>15/08/2023</td>
+                                            <td>103</td>
+                                            <td>Shipping</td>
+                                            <td>249.99</td>
+                                            <td>Failed</td>
+                                             <td>Credit Card</td>
+                                            <td>Madhapur</td>
+                                            <td>
+                                                <button class="btn btn-primary icofont-ui-edit" type="submit"> Edit</button>
+                                                <button class="btn btn-danger icofont-ui-delete" type="submit"> Delete</button>
+                                            </td>
+                                          </tr>
+                                            <th scope="row">4</th>
+                                            <td>20/06/2024</td>
+                                            <td>104</td>
+                                            <td>Delivered</td>
+                                            <td>419.54</td>
+                                            <td>Paid</td>
+                                             <td>UPI</td>
+                                            <td>Raidurg</td>
+                                            <td>
+                                                <button class="btn btn-primary icofont-ui-edit" type="submit"> Edit</button>
+                                                <button class="btn btn-danger icofont-ui-delete" type="submit"> Delete</button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>25/12/2023</td>
+                                            <td>105</td>
+                                            <td>Delivered</td>
+                                            <td>209.99</td>
+                                            <td>Pending</td>
+                                             <td>Cheque</td>
+                                            <td>Panjagutta</td>
+                                            <td>
+                                                <button class="btn btn-primary icofont-ui-edit" type="submit"> Edit</button>
+                                                <button class="btn btn-danger icofont-ui-delete" type="submit"> Delete</button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                                </form>
+                            </div>
+                        </div>  
+                </div>
+            </div>
+        </div> 
+
+    </div>
+  
+</div>
+<!-- Jquery Core Js -->
+<script src="../assets/bundles/libscripts.bundle.js"></script>
+
+
+<!-- Jquery Page Js -->
+<script src="../../js/template.js"></script>
+
+ 
+</body>
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 12:12:30 GMT -->
+</html>

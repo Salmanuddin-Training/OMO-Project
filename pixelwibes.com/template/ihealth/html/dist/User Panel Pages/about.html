@@ -1,0 +1,500 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 12:12:04 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> OMO HOME </title>
+    <link rel="icon" href="../assets/images/medical.png" type="png"> <!-- Favicon-->
+    <!-- plugin css file  -->
+    <link rel="stylesheet" href="../assets/plugin/datatables/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="../assets/plugin/datatables/dataTables.bootstrap5.min.css">
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../assets/css/ihealth.style.min.css">
+    <!-- Google Code  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-264428387-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-264428387-1');
+    </script>
+</head>
+<body>
+
+
+
+<div id="ihealth-layout" class="theme-tradewind">
+    
+    <!-- sidebar -->
+    <div class="sidebar px-4 py-4 py-md-5 me-0">
+        <div class="d-flex flex-column h-100">
+            <a href="index.html" class="mb-0 brand-icon">
+                <span class="logo-icon">
+                    <i class="icofont-medical-sign-alt fs-2"></i>
+                </span>
+                <span class="logo-text">OMO</span>
+            </a>
+            <!-------------------------------------------------- Menu: main ul ----------------------------------------------------->
+
+            <ul class="menu-list flex-grow-1 mt-3">
+                <li ><a class="m-link" href="index.html"><i class="icofont-ui-home fs-5"></i><span>Home Page</span></a></li>
+                <li><a class="m-link" href="myorders.html"><i class="icofont-bag fs-5"></i> <span>My Orders</span></a></li>
+                <li class="collapsed">
+                <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#dashboard" href="#">
+                <i class="icofont-calculator-alt-2 fs-5"></i> <span>My Accounts</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                <!-- Menu: Sub menu ul -->
+                    <ul class="sub-menu collapse show" id="dashboard">
+                        <li><a class="ms-link active" href="myprofile.html">Profile</a></li>
+                        <li><a class="ms-link" href="paymentdetails.html">Payments</a></li>
+                        <li><a class="ms-link" href="passwordmanager.html">Password Manager</a></li>
+                    </ul>
+                </li>
+                <li><a class="m-link" href="contact.html"><i class="icofont-live-support fs-5"></i> <span>Contact us</span></a></li>
+                <li><a class="m-link" href="about.html"><i class="icofont-info-square fs-5"></i> <span>About us</span></a></li>
+            </ul>
+
+            <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+            </button>
+            
+        </div>
+    </div>
+
+    <!---------------------------------------------------------- main body area --------------------------------------------------->
+    <div class="main px-lg-4 px-md-4">
+
+        <!------------------------------------------------------------------------ Body: Header -------------------------------------------->
+        <div class="header">
+            <nav class="navbar py-4">
+                <div class="container-xxl">
+    
+                    <!------------------------------------------------------ header rightbar icon --------------------------------------->
+                    <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+            
+                        <div class="dropdown notifications zindex-popover">
+                            <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="icofont-alarm fs-4"></i>
+                            </a>
+                            <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-sm-end p-0 m-0">
+                                <div class="card border-0 w380">
+                                    <div class="card-header border-0 p-3">
+                                        <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                            <span>Notifications</span>
+                                        </h5>
+                                    </div>
+                                    <a class="card-footer text-center border-top-0" href="#"> View all notifications</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---------------------------- Login ------------------------------------------------>
+
+                       <a href="login.html"> <button type="button" class="btn btn-outline-primary">Logout</button></a>
+                        <!----------------------------------user-------------------------------->
+                        <div>
+                            <div class="col d-flex justify-content-end ms-auto">
+                            <div class="icon-holder">
+                                <div class="icon fs-3"> 
+                                    <a href="myprofile.html"><i class="icofont-user-alt-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Profile" style="margin-left: 10px;"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                        <!------------------------------------------ settings---------------------------------------->
+                        <div class="setting ms-2">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-4"></i></a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                        <span class="fa fa-bars"></span>
+                    </button>
+    
+                    <!-------------------------------------- main menu Search---------------------------------------->
+                    <div class="order-0 col-lg-8 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 d-flex justify-content-end " style="margin-left: 30px;">
+                        <div class="input-group flex-nowrap input-group-lg ">
+                            <input type="search" class="form-control " placeholder="Search..." aria-label="search" aria-describedby="addon-wrapping">
+                            <button type="button" class="input-group-text" id="addon-wrapping"><i class="icofont-search-2"></i></button>
+                        </div>
+
+                    </div>
+                    <!-------------------------------- cart -------------------------------------->
+                    <div class="col d-flex justify-content-end ms-auto">
+                        <div class="icon-holder">
+                            <div class="icon fs-3"> 
+                                <a href="cart.html"><i class="icofont-cart" style="size: 50%;"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!------------------------------------------- End Cart ------------------------------->
+
+        
+                </div>
+                    
+            </nav>
+
+        </div> 
+<!--------------------------------------------------------------------------------------------------------------------------->
+<div class="main px-lg-4 px-md-6" >    
+    <h2><b>About Us</b></h2><hr>
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Extensive Pharmacy Network:</strong> Gain access to a vast network of verified pharmacies, ensuring a wide range of authentic medications.</li>
+            <li><strong>Easy Prescription Upload:</strong> Simplify the ordering process by easily uploading your prescriptions through our intuitive interface.</li>
+            <li><strong>Smart Medicine Search:</strong> Quickly find the medicines you need with our smart search feature, providing comprehensive information about each product.</li>
+            <li><strong>Order Tracking:</strong> Stay informed about the status of your order with real-time tracking, so you know exactly when your medicines will arrive.</li>
+            <li><strong>Secure Transactions:</strong> Enjoy peace of mind with our secure payment gateway, ensuring the confidentiality of your personal and financial information.</li>
+        </ul>
+    </section>
+
+    <section class="benefits">
+        <h2> Benefits</h2>
+        <ul>
+            <li><strong>Time-Saving Convenience:</strong> Skip the long queues at the pharmacy. Order your medicines from the comfort of your home or on-the-go.</li>
+            <li><strong>Automatic Refill Reminders:</strong> Never run out of essential medications. Receive timely reminders for prescription refills, ensuring continuous care.</li>
+            <li><strong>Expert Consultation:</strong> Connect with qualified healthcare professionals for guidance and advice, enhancing your overall healthcare experience.</li>
+            <li><strong>Discounts and Offers:</strong> Avail exclusive discounts and special offers on your orders, making healthcare more affordable.</li>
+        </ul>
+    </section>
+
+    <section class="why-choose">
+        <h2>Why Choose OMO </h2>
+        <ul>
+            <li>Seamless User Experience</li>
+            <li>Prompt and Reliable Deliveries</li>
+            <li>Commitment to Medication Safety</li>
+            <li>Friendly Customer Support</li>
+        </ul>
+    </section>
+
+    <section class="call-to-action">
+        <p>Empower yourself with OMO - your one-stop solution for all your medication needs. Download the app today and experience a new era in online healthcare.</p>
+        
+    </section>
+    <h1>Online Medicine Ordering Inc.</h1>
+
+
+    <section>
+        <h2>Registered Address:</h2>
+        <p>123 Health Street<br>
+            Pharmacy City, PC 56789<br>
+            MedicalLand
+        </p>
+    </section>
+        <div>
+            <section>
+                <h2>Company Registration:</h2>
+                <p>Registered under the laws of MedicalLand<br>
+                    Company Registration Number: MED123456
+                </p>
+            </section>
+
+            <section>
+                <h2>Contact Information:</h2>
+                <p>Customer Support Email: <a href="mailto:support@onlinemedorder.com">support@onlinemedorder.com</a><br>
+                    Customer Support Phone: +1 (555) 123-4567
+                </p>
+            </section>
+
+            <section>
+                <h2>Pharmacy License:</h2>
+                <p>Online Medicine Ordering Inc. operates as an online pharmacy under License Number PHARM7890 issued by the
+                    MedicalLand Health Regulatory Authority.
+                </p>
+            </section>
+
+            <section>
+                <h2>Data Protection:</h2>
+                <p>Online Medicine Ordering Inc. complies with data protection regulations. We prioritize the privacy and security
+                    of user information. For details, please refer to our <a href="#privacy-policy">Privacy Policy</a>.
+                </p>
+            </section>
+
+            <section>
+                <h2>Terms of Service:</h2>
+                <p>By using our services, users agree to adhere to the terms outlined in our <a href="#terms-of-service">Terms of
+                        Service</a>. It is essential to review and understand these terms before accessing our platform.
+                </p>
+            </section>
+
+            <section>
+                <h2>Disclaimer:</h2>
+                <p>The information provided on our platform, including but not limited to medication details, is for informational
+                    purposes only. It does not substitute professional medical advice. Users are encouraged to consult with
+                    qualified healthcare professionals before making any health-related decisions.
+                </p>
+            </section>
+
+            <section>
+                <h2>Copyright Notice:</h2>
+                <p>All content and materials on the Online Medicine Ordering Inc. website are protected by copyright.
+                    Unauthorized use or reproduction is prohibited.
+                </p>
+            </section>
+
+            <section>
+                <h2>Anti-Fraud Policy:</h2>
+                <p>Online Medicine Ordering Inc. is committed to preventing fraud and ensuring the security of transactions. Any
+                    fraudulent activities will be reported to the appropriate authorities.
+                </p>
+            </section>
+
+            <section>
+                <h2>Governing Law:</h2>
+                <p>Any legal matters related to Online Medicine Ordering Inc. are governed by and construed in accordance with the
+                    laws of MedicalLand.
+                </p>
+            </section>
+
+            <section>
+                <h2>Changes to Legal Information:</h2>
+                <p>Online Medicine Ordering Inc. reserves the right to update and modify this legal information as needed. Users
+                    will be notified of any changes through appropriate channels.
+                </p>
+            </section>
+        </div>
+        <section>
+            <h2>Customer Feedback</h2>
+
+            <!-- Feedback Form -->
+            <form id="feedbackForm" action="#" method="post">
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required><br/>
+                <div style="padding-top: 10px; padding-left:10px ;">
+                <label for="feedbackMessage">Feedback:</label>
+                <textarea id="feedbackMessage" name="feedbackMessage"  required></textarea></form></br>
+                </div></br>
+
+                <button type="button" class="btn btn-primary">Submit Feedback</button>
+            </form></section></br><hr>
+
+            <!-- Display Customer Testimonials -->
+            <div id="testimonials">
+                <h3>What Our Customers Are Saying:</h3>
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <p>"I love how easy it is to order my medications online. The process is simple, and the delivery is always
+                        on time!"</p>
+                    <span class="customerName">- Alice Johnson</span>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <p>"Online Medicine Ordering Inc. has made my life so much easier. I appreciate the convenience and
+                        reliability."</p>
+                    <span class="customerName">-  balaji</span>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <hr><footer>
+            <div>
+                <table style="background: rgb(19, 180, 153); width: 102%; height: 150px;">
+                    <tr>
+                        <td>
+                           <h5> <strong>&nbsp;&nbsp;&nbsp;Rights 2023 by OMO. All rights received.</strong></h5>
+                        </td>
+                        <td width="200" style="text-align:right;">
+                            <span><img style="padding-right: 10px;" src="../assets/images/lg/facebook.png" width="35"></span>
+                            <span><img style="padding-right: 10px;" src="../assets/images/lg/instagram.png" width="35"></span>
+                            <span><img style="padding-right: 10px;" src="../assets/images/lg/twitterx.png" width="35"></span>
+                        </td>
+                        <tr>
+                            <td>
+                                <span class="logo-icon" >&nbsp;&nbsp;&nbsp;
+                                    <i class="icofont-medical-sign-alt fs-2"></i>
+                                </span>
+                                <strong><span class="logo-text">Online Medicine Oredering</span></strong>
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+
+
+        <!--------------------------------------------- Modal Custom Settings--------------------------------->
+        <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog  modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Custom Settings</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body custom_setting">
+                        <!-- Settings: Color -->
+                        <div class="setting-theme pb-3">
+                            <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>Template Color Settings</h6>
+                            <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                                <li data-theme="indigo"><div class="indigo"></div></li>
+                                <li data-theme="tradewind" class="active"><div class="tradewind"></div></li>
+                                <li data-theme="monalisa"><div class="monalisa"></div></li>
+                                <li data-theme="blue"><div class="blue"></div></li>
+                                <li data-theme="cyan"><div class="cyan"></div></li>
+                                <li data-theme="green"><div class="green"></div></li>
+                                <li data-theme="orange"><div class="orange"></div></li>
+                                <li data-theme="blush"><div class="blush"></div></li>
+                                <li data-theme="red"><div class="red"></div></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-gradient py-3">
+                            <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-paint fs-4 me-2 text-primary"></i>Sidebar Gradient</h6>
+                            <div class="form-check form-switch gradient-switch pt-2 mb-2">
+                                <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                <label class="form-check-label" for="CheckGradient">Enable Gradient! ( Sidebar )</label>
+                            </div>
+                        </div>
+                        <!-- Settings: Template dynamics -->
+                        <div class="dynamic-block py-3">
+                            <ul class="list-unstyled choose-skin mb-2 mt-1">
+                                <li data-theme="dynamic"><div class="dynamic"><i class="icofont-paint me-2"></i> Click to Dyanmic Setting</div></li>
+                            </ul>
+                            <div class="dt-setting">
+                                <ul class="list-group list-unstyled mt-1">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label>Primary Color</label>
+                                        <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label>Secondary Color</label>
+                                        <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label class="text-muted">Chart Color 1</label>
+                                        <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label class="text-muted">Chart Color 2</label>
+                                        <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label class="text-muted">Chart Color 3</label>
+                                        <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label class="text-muted">Chart Color 4</label>
+                                        <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                        <label class="text-muted">Chart Color 5</label>
+                                        <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Settings: Font -->
+                        <div class="setting-font py-3">
+                            <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-font fs-4 me-2 text-primary"></i> Font Settings</h6>
+                            <ul class="list-group font_setting mt-1">
+                                <li class="list-group-item py-1 px-2">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="radio" name="font" id="font-poppins" value="font-poppins">
+                                        <label class="form-check-label" for="font-poppins">
+                                            Poppins Google Font
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-1 px-2">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                        <label class="form-check-label" for="font-opensans">
+                                            Open Sans Google Font
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-1 px-2">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="radio" name="font" id="font-montserrat" value="font-montserrat">
+                                        <label class="form-check-label" for="font-montserrat">
+                                            Montserrat Google Font
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-1 px-2">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="radio" name="font" id="font-mukta" value="font-mukta">
+                                        <label class="form-check-label" for="font-mukta">
+                                            Mukta Google Font
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Settings: Light/dark -->
+                        <div class="setting-mode py-3">
+                            <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>Contrast Layout</h6>
+                            <ul class="list-group list-unstyled mb-0 mt-1">
+                                <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                    <div class="form-check form-switch theme-switch mb-0">
+                                        <input class="form-check-input" type="checkbox" id="theme-switch">
+                                        <label class="form-check-label" for="theme-switch">Enable Dark Mode!</label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                    <div class="form-check form-switch theme-high-contrast mb-0">
+                                        <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                        <label class="form-check-label" for="theme-high-contrast">Enable High Contrast</label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                    <div class="form-check form-switch theme-rtl mb-0">
+                                        <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                        <label class="form-check-label" for="theme-rtl">Enable RTL Mode!</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <button type="button" class="btn btn-white border lift" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary lift">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+  
+</div>
+
+<!-- Jquery Core Js -->
+<script src="../assets/bundles/libscripts.bundle.js"></script>
+
+<!-- Plugin Js -->
+<script src="../assets/bundles/apexcharts.bundle.js"></script>
+<script src="../assets/plugin/jqueryuicalandar/jquery-ui.min.js"></script>
+<script src="../assets/plugin/owlcarousel/owl.carousel.js"></script>
+<script src="../assets/bundles/dataTables.bundle.js"></script>      
+
+<!-- Jquery Page Js -->
+<script src="../../js/template.js"></script>
+<script src="../../js/page/index.js"></script>
+ <script>
+      $('#myDataTable')
+      .addClass( 'nowrap' )
+      .dataTable( {
+          responsive: true,
+          columnDefs: [
+              { targets: [-1, -3], className: 'dt-body-right' }
+          ]
+      });
+ </script>
+</body>
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 12:12:16 GMT -->
+</html> 
+
+
+
+
+
+
+
+
+
+
